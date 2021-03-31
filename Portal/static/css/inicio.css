@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body{
+    background-size: 220%;
+    background-color: black;
+}
+
+
+li.secion{
+  float: left;
+  list-style: none;
+  margin-top: 1vw;
+  margin-right: -3.4vw;
+}
+
+nav{
+
+  float: right;
+  margin-top: -6.5vw;
+  margin-right: 3.5vw;
+}
+
+@font-face{
+  font-family: 'rock';
+  src: url(../Fuentes/QueenInlineGrunge.ttf);
+}
+
+a.secion{
+  text-decoration: none;
+  font-family: 'rock';
+  color: black;
+  font-size: 1.5vw;
+  margin-right: 4vw;
+  background: white;
+}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 0px;
+}
+
+
+.menu li{
+  
+  background-image: -webkit-gradient(linear,left top, left bottom,from(#d3ffff), color-stop(0.5,#6298ff), color-stop(0.51, #5b7ffd));
+  background-image: -moz-linear-gradient(#d3ffff 0%, #6298ff 50%, #5b7ffd 51%);
+  background-image: -o-linear-gradient(#d3ffff 0%, #6298ff 50%, #5b7ffd 51%);
+  background-image: -ms-linear-gradient(#d3ffff 0%, #6298ff 50%, #5b7ffd 51%);
+  background-image: linear-gradient(#d3ffff 0%, #6298ff 50%, #5b7ffd 51%);
+  border-right: 1px solid rgba(9, 9, 9, 0.125);
+  box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+  -moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+  -webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+  position:relative;
+  float: left;
+  list-style: none;
+}
+
+.menu li:after{
+
+  /* Esto crea un pseudo elemento dentro de cada LI */ 
+  
+  content:'.';
+  text-indent:-9999px;
+  overflow:hidden;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:1;
+  opacity:0;  
+  background-image:-webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
+  background-image:-moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+  background-image:-o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+  background-image:-ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+  background-image:linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+  box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+  -moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+  -webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+  -moz-transition:0.25s all;
+  -webkit-transition:0.25s all;
+  -o-transition:0.25s all;
+  transition:0.25s all;
+}
+
+.menu li:last-child{    /* esta es parte de la transicion */
+  border-radius: 0 4px 4px 0;
+}
+
+.menu li:hover:after,  /* y esta tmb es parte de la transicion */
+.menu li.selected:after,
+.menu li:target:after{
+  opacity:1;
+}
+
+
+/* Estilo del grosor del menu*/
+
+.menu li a{
+  color: black;
+  display: inline-block;
+  font: 20px/1 Lobster,Arial,sans-serif;
+  padding: 12px 35px 14px;
+  position: relative;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+  z-index:2;
+  text-decoration:none;
+  white-space:nowrap;
+  width: 280px;
+}
+
+.logo{
+  width: 13vw; 
+  height: 8vw;
+}
+
+.carousel, .carousel-inner{
+  width: 45vw;
+}
+
+.carousel-inner img {
+  width: 45vw;
+  height: 35vw;
+}
+
+.carousel-control-prev{
+  width: 4vw;
+}
+
+.carousel-control-next{
+  width: 4vw;
+}
+
+
+.carousel-control-prev-icon{
+  background: url(../img/boton2.png);
+  width: 4vw;
+  height: 4vw;  
+}
+
+.carousel-control-next-icon{
+  background: url(../img/boton1.png);
+  width: 4vw;
+  height: 4vw;
+}
+
+#contenedor{
+  width: 0vw;
+  height: 0vw;
+  margin-left: 32.5vw;
+  margin-top: 0vw;
+}
